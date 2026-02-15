@@ -11,9 +11,10 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+        //'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        //'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
       },
+        base: '/aegis-forge-eternal-quest/',   // ← à adapter avec le nom exact de ton dépôt
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
